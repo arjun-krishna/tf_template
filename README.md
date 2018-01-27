@@ -1,40 +1,39 @@
-# tf_template
+# TensorFlow Model Template
 My personal TensorFlow model template. 
 
 organization
 -------------
-## code
+#### code
 * data.py  : Has the Data Manager class that produces the data in batches for training.
 * model.py : Has the TensorFlow model
 * app.py   : The main application code with two modes i.e., (1) train (2) sample
 
-## directories
+#### directories
 * log_dir  : Summaries from training will be stored here
 * chkpt    : Stores model checkpoints which can be used to restore models later
-
 
 Training the model
 -------------------
 ```bash
->$ python app.py --mode train 
+$ python app.py --mode train 
 ```
 
 Restoring checkpoint and running (sample) 
 ------------------------------------------
 ```bash
->$ python app.py --mode sample
+$ python app.py --mode sample
 ```
 
 for more info of the command line params see
 ```bash
->$ python app.py --help
+$ python app.py --help
 ```
 
 Running TensorBoard
 --------------------
 ```bash
->$ tensorboard --logdir log_dir
+$ tensorboard --logdir log_dir
 ```
 
-Will generate nice visualization of how the loss function changes over time and also
-depicts the tensorflow model graph.
+TensorBoard generates nice visualization of how the loss function changes over time and also
+depicts the tf-model graph.
