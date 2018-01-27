@@ -24,7 +24,7 @@ Restoring checkpoint and running (sample)
 $ python app.py --mode sample
 ```
 
-for more info of the command line params see
+for more info of the command line params run
 ```bash
 $ python app.py --help
 ```
